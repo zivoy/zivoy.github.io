@@ -9,6 +9,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://raw.githubusercontent.com/dansup/bulma-templates/master/css/cards.css">
+    <link href="src/css/lightbox.css" rel="stylesheet">
 
 </head>
 
@@ -21,11 +22,6 @@
             <a class="navbar-item" href=".">
                 <img class="is-rounded" src="blenderlo.gif" alt="Icon">
             </a>
-            <span class="navbar-burger burger" data-target="navbarMenu">
-                                <span></span>
-                        <span></span>
-                        <span></span>
-                        </span>
         </div>
         <div id="navbarMenu" class="navbar-menu">
             <div class="navbar-end">
@@ -36,16 +32,21 @@
                     Contact info
                 </a>
                 <a class="navbar-item">
-                    Resume
+                    Resumé
                 </a>
             </div>
         </div>
     </div>
 </nav>
 <!-- END NAV -->
+
+
 <div class="container">
     <h1 class="title is-1">Ziv Shalit - Portfolio</h1>
     <h3 class="subtitle is-3">Theses are examples of my work</h3>
+    <h5 class="subtitle is-5">All of theses where made with blender and are examples of my work</h5>
+    <h6 class="subtitle is-6">(click to enlarge)</h6>
+    <a href="scene.jpg" data-lightbox="image-1">Image #1</a>
     <div id="flow">
         <span class="flow-1"></span>
         <span class="flow-2"></span>
@@ -59,7 +60,7 @@
                     <div class="card-image">
                         <figure class="image">
                             <iframe width="100%" height="auto" src="https://youtube.com/embed/K7uIqUf2qdg"
-                                    allowfullscreen alt="Ziv Shalit"></iframe>
+                                    allowfullscreen></iframe>
                         </figure>
                     </div>
                     <div class="card-content">
@@ -77,19 +78,21 @@
             <div class="column is-one-third">
                 <div class="card large">
                     <div class="card-image">
-                        <figure class="video is-16by9">
+                        <figure class="image">
                             <iframe width="100%" height="auto" src="https://youtube.com/embed/Cd4-gfuUXIM"
-                                    allowfullscreen alt="360 Video"></iframe>
+                                    allowfullscreen></iframe>
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="media">
                             <div class="media-content">
-                                <p class="title is-4 no-padding">360 Videos</p>
+                                <p class="title is-4 no-padding">360° Videos</p>
                             </div>
                         </div>
                         <div class="content">
-                            360 Videos are movable (pause this video and look around)
+                            This is a 360° video instead of just rendering a camera view you render everything and let
+                            the viewer decide what they want to focus on.<br>
+                            360° Videos are movable (pause this video and look around)
                         </div>
                     </div>
                 </div>
@@ -99,7 +102,7 @@
                     <div class="card-image">
                         <figure class="image">
                             <iframe width="100%" height="auto" src="https://youtube.com/embed/oXrYltaj0C0"
-                                    allowfullscreen alt="Motion tracking"></iframe>
+                                    allowfullscreen></iframe>
                         </figure>
                     </div>
                     <div class="card-content">
@@ -123,7 +126,9 @@
                 <div class="card large round">
                     <div class="card-image ">
                         <figure class="image">
-                            <img src="dulahan.png" alt="2D">
+                            <a href="dulahan.png" data-lightbox="2D">
+                                <img src="dulahan - icon.png" alt="2D">
+                            </a>
                         </figure>
                     </div>
                     <div class="card-content">
@@ -133,7 +138,9 @@
                             </div>
                         </div>
                         <div class="content">
-                            I can render 3D objects so they seem 2D and animate them
+                            Using compositing and shading you can make 3D models and animations seem as though they are
+                            2D.<br>
+                            This allows for easy animating of seemingly 2d animations.
                         </div>
                     </div>
                 </div>
@@ -145,8 +152,8 @@
                             <div class="sketchfab-embed-wrapper">
                                 <iframe width="100%" height="auto"
                                         src="https://sketchfab.com/models/42922fa9014f477bb7bde326b0a9e1e8/embed?autospin=0.2"
-                                        frameborder="0" alt="Wand" allow="autoplay; fullscreen; vr"
-                                        mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                                        frameborder="0" allow="autoplay; fullscreen; vr"></iframe>
+                            </div>
                         </figure>
                     </div>
                     <div class="card-content">
@@ -156,7 +163,8 @@
                             </div>
                         </div>
                         <div class="content">
-                            I can model 3D objects such as this wand game asset
+                            This is an example of a 3D model I made as a game asset.<br>
+                            This is a wand made using Blender.
                         </div>
                     </div>
                 </div>
@@ -165,7 +173,9 @@
                 <div class="card large">
                     <div class="card-image">
                         <figure class="image">
-                            <img src="tire finish.png" alt="Image">
+                            <a href="tire finish.png" data-lightbox="Realistic models">
+                                <img src="tire finish - icon.png" alt="Image">
+                            </a>
                         </figure>
                     </div>
                     <div class="card-content">
@@ -175,7 +185,8 @@
                             </div>
                         </div>
                         <div class="content">
-                            I can make models that seam real
+                            This wheel was made based of a Scuderia Cameron Glickenhaus wheel, for a 3D model of the
+                            car.
                         </div>
                     </div>
                 </div>
@@ -184,7 +195,9 @@
                 <div class="card large">
                     <div class="card-image">
                         <figure class="image">
-                            <img src="scene.jpg" alt="Scenery">
+                            <a href="scene.jpg" data-lightbox="Scenery">
+                                <img src="scene - icon.png" alt="Scenery">
+                            </a>
                         </figure>
                     </div>
                     <div class="card-content">
@@ -203,7 +216,9 @@
                 <div class="card large">
                     <div class="card-image">
                         <figure class="image">
-                            <img src="skulpt.png" alt="sculpting">
+                            <a href="skulpt.png" data-lightbox="Sculpting">
+                                <img src="skulpt - icon.png" alt="sculpting">
+                            </a>
                         </figure>
                     </div>
                     <div class="card-content">
@@ -213,7 +228,8 @@
                             </div>
                         </div>
                         <div class="content">
-                            I can use a version of 3D modelling called sculpting
+                            An example of a 3D model made with sculpting. <br>
+                            This is a trial of an object that I tried to make using the 3D modeling method of sculpting.
                         </div>
                     </div>
                 </div>
@@ -222,7 +238,9 @@
                 <div class="card large">
                     <div class="card-image">
                         <figure class="image">
-                            <img src="clips.jpg" alt="3D printing">
+                            <a href="clips.jpg" data-lightbox="3D printing">
+                                <img src="clips - icon.png" alt="3D printing">
+                            </a>
                         </figure>
                     </div>
                     <div class="card-content">
@@ -232,7 +250,8 @@
                             </div>
                         </div>
                         <div class="content">
-                            I can deign and print 3D models on a 3D printer
+                            These are clips that I designed in Blender and 3D printed,
+                            I made these to organise and hold my wires.
                         </div>
                     </div>
                 </div>
@@ -241,7 +260,9 @@
                 <div class="card large">
                     <div class="card-image">
                         <figure class="image">
-                            <img src="stackable ships.png" alt="tiling">
+                            <a href="stackable ships.png" data-lightbox="Tileable images">
+                                <img src="stackable ships - icon.png" alt="tiling">
+                            </a>
                         </figure>
                     </div>
                     <div class="card-content">
@@ -251,7 +272,8 @@
                             </div>
                         </div>
                         <div class="content">
-                            I can render images that tile with themselves great for backgrounds
+                            This is an example of a tileable image. <br>
+                            It can repeat with itself continually in all directions, great for backgrounds.
                         </div>
                     </div>
                 </div>
@@ -260,13 +282,15 @@
                 <div class="card large">
                     <div class="card-image">
                         <figure class="image">
-                            <img src="valentine.png" alt="Emotinal">
+                            <a href="valentine.png" data-lightbox="Dramatic">
+                                <img src="valentine - icon.png" alt="Emotional">
+                            </a>
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="media">
                             <div class="media-content">
-                                <p class="title is-4 no-padding">???</p>
+                                <p class="title is-4 no-padding">Dramatic</p>
                             </div>
                         </div>
                         <div class="content">
@@ -279,7 +303,9 @@
                 <div class="card large">
                     <div class="card-image">
                         <figure class="image">
-                            <img src="on a rail.png" alt="Procedral">
+                            <a href="on a rail.png" data-lightbox="Procedural texture">
+                                <img src="on a rail - icon.png" alt="Procedural">
+                            </a>
                         </figure>
                     </div>
                     <div class="card-content">
@@ -327,6 +353,7 @@
 </footer>
 
 <script src="https://raw.githubusercontent.com/dansup/bulma-templates/master/js/bulma.js"></script>
+<script src="src/js/lightbox-plus-jquery.js"></script>
 
 
 </body>
